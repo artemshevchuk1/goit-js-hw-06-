@@ -7,7 +7,7 @@ function onFormSubmit(event){
 
     const mail = event.currentTarget.elements.email.value;
     const password = event.currentTarget.elements.password.value;
-if(mail === "" && password  ==="") {
+if(mail === "" || password  ==="") {
     alert("Заповніть всі поля");
 }
     else {
