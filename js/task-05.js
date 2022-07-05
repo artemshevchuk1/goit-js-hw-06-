@@ -1,10 +1,16 @@
 const refs={
     input: document.querySelector("#name-input"),
     name: document.querySelector("#name-output")
-}
+};
 
-refs.input.addEventListener("input",onInputChange )
+refs.input.addEventListener("input",onInputChange );
+
+const emptyString= "Anonymous";
 
 function onInputChange(event){
-    refs.name.textContent=event.currentTarget.value;
+   if( refs.name.textContent = event.currentTarget.value){
+    return onInputChange;
+   } else{
+    return refs.name.textContent = emptyString;
+   }
 }

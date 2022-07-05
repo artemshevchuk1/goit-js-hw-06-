@@ -21,4 +21,5 @@ const imgEl = images.map((images)=>
    <img src=${images.url} alt=${images.alt} style="width: 100%; width: 100%; padding: 10px 10px;">
    </li>`
 )
+.join("");
 list.insertAdjacentHTML("beforeend", imgEl);
